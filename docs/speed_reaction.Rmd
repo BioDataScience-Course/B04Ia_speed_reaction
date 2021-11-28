@@ -1,7 +1,7 @@
 ---
-title: "Carnet de Laboratoire : Vitesse de réaction chimique"
-author: '...'
-date: "..."
+title: "Vitesse d'une réaction chimique"
+author: '___'
+date: "___"
 output: html_document
 ---
 
@@ -9,30 +9,52 @@ output: html_document
 SciViews::R
 ```
 
-<!-- Courte introduction sur l'équation de Michaelis-Menten. -->
+## Introduction
 
-<!-- Equation --> 
+<!--% Écrivez ici une courte introduction qui présente l'équation de Michaelis-Menten comme fonction décrivant la vitesse initiale d'une réaction chimique en fonction de la concentration en substrat. -->
 
-$$ ... $$
+<!--% Ajoutez aussi l'équation de ce modèle sous forme LaTeX -->
 
-<!-- Importation des données. -->
+$$ ___ $$
+
+## Analyse
+
+### Description des données
 
 ```{r import}
 
 ```
 
-<!-- Description des données. -->
+<!--% Ajoutez ici un tableau qui reprend les 10 premières lignes du jeu de données, ainsi qu'un graphique approprié par rapport à l'analyse qui est envisagée. -->
 
-```{r description}
-
+```{r table}
+knitr::kable(___)
 ```
 
-<!-- Modélisation et description des différentes étapes. -->
+```{r plot}
+chart(___) +
+  ___
+```
+
+### Ajustement d'un modèle Michaelis-Menten
+
+<!--% Ajustez votre modèle et affichez le résumé `summary()` de votre analyse. Commentez en 3 ou 4 lignes -->
 
 ```{r modele}
 
 ```
 
-<!-- Conclusion et équation paramétrée. --> 
+<!--% Écrivez ici le modèle paramétré, sous forme d'une équation LaTeX -->
+
+$$ ___ $$
+<--% Les scientifiques vous demandent aussi de prédire la vitesse la plus probable pour des concentrations initiales en substrat de 25, 50, 75 et 100 mmol/L. Faites-le ci-dessous. -->
+
+```{r predict}
+res <- predict(___, newdata = ___)
+res
+```
 
 
+## Discussion
+
+<!--% En 2 ou 3 phrases notez vos observations concernant l'ajustement d'un modèle de Michaelis-Menten dans R (aussi bien au niveau technique que résultats obtenus). -->
